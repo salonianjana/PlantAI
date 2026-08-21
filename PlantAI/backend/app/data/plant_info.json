@@ -1,0 +1,25 @@
+{
+    "Tomato___Early_blight": {
+        "plant": "Tomato",
+        "disease": "Early Blight",
+        "symptoms": "Dark spots and yellowing on older leaves.",
+        "treatment": "Remove infected leaves and improve air circulation.",
+        "prevention": "Avoid overhead watering and maintain proper plant spacing."
+    },
+
+    "Potato___Late_blight": {
+        "plant": "Potato",
+        "disease": "Late Blight",
+        "symptoms": "Dark water-soaked lesions on leaves.",
+        "treatment": "Remove infected plant material and use appropriate fungicide.",
+        "prevention": "Avoid excessive moisture and maintain good airflow."
+    },
+
+    "Apple___Apple_scab": {
+        "plant": "Apple",
+        "disease": "Apple Scab",
+        "symptoms": "Olive-green or brown spots on leaves and fruit.",
+        "treatment": "Remove infected leaves and use appropriate fungicide.",
+        "prevention": "Keep the area clean and remove fallen infected leaves."
+    }
+}

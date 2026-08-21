@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PlantAI - Result</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🌱 PlantAI
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/history.html">History</a>
+    </div>
+
+</nav>
+
+
+<main class="result-container">
+
+    <h1>🌿 Analysis Result</h1>
+
+
+    <div class="result-card">
+
+        <h2 id="plant"></h2>
+
+        <h3 id="disease"></h3>
+
+        <div class="confidence">
+
+            Confidence
+
+            <strong id="confidence"></strong>
+
+        </div>
+
+
+        <div class="info">
+
+            <h3>🔍 Symptoms</h3>
+
+            <p id="symptoms"></p>
+
+
+            <h3>💊 Treatment</h3>
+
+            <p id="treatment"></p>
+
+
+            <h3>🛡️ Prevention</h3>
+
+            <p id="prevention"></p>
+
+        </div>
+
+
+        <a
+            href="/"
+            class="button"
+        >
+            Analyze Another Leaf
+        </a>
+
+    </div>
+
+</main>
+
+
+<script>
+
+    const result =
+        JSON.parse(
+            sessionStorage.getItem("plantResult")
+        );
+
+    if (result) {
+
+        document.getElementById("plant").textContent =
+            result.plant;
+
+        document.getElementById("disease").textContent =
+            result.disease;
+
+        document.getElementById("confidence").textContent =
+            result.confidence + "%";
+
+        document.getElementById("symptoms").textContent =
+            result.symptoms;
+
+        document.getElementById("treatment").textContent =
+            result.treatment;
+
+        document.getElementById("prevention").textContent =
+            result.prevention;
+
+    }
+
+</script>
+
+</body>
+
+</html>

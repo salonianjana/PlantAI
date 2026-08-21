@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlantAI - Plant Disease Detection</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            🌱 PlantAI
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/history.html">History</a>
+        </div>
+    </nav>
+
+
+    <main class="container">
+
+        <section class="hero">
+
+            <h1>
+                AI Plant Disease Detection
+            </h1>
+
+            <p>
+                Upload a photo of a plant leaf and let AI identify
+                possible diseases.
+            </p>
+
+        </section>
+
+
+        <section class="upload-card">
+
+            <div class="upload-icon">
+                🌿
+            </div>
+
+            <h2>Upload Leaf Image</h2>
+
+            <p>
+                JPG, PNG or WEBP
+            </p>
+
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/png,image/jpeg,image/webp"
+            >
+
+
+            <div id="preview-container">
+
+                <img
+                    id="preview"
+                    alt="Image Preview"
+                >
+
+            </div>
+
+
+            <button
+                id="analyzeButton"
+                onclick="analyzeImage()"
+            >
+                🔍 Analyze Leaf
+            </button>
+
+
+            <div
+                id="loading"
+                class="loading"
+            >
+                Analyzing your plant...
+            </div>
+
+
+            <div
+                id="error"
+                class="error"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>

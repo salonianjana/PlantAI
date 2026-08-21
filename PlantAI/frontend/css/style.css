@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f4;
+    color: #1f2937;
+}
+
+
+.navbar {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+.upload-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.upload-icon {
+    font-size: 60px;
+}
+
+
+.upload-card h2 {
+    margin: 20px 0 10px;
+}
+
+
+input[type="file"] {
+    margin: 30px 0;
+}
+
+
+button,
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover,
+.button:hover {
+    opacity: 0.9;
+}
+
+
+#preview {
+    display: none;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+.loading {
+    display: none;
+    margin-top: 20px;
+}
+
+
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+
+.result-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.result-card {
+    background: white;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.result-card h2 {
+    font-size: 32px;
+}
+
+
+.result-card h3 {
+    margin-top: 10px;
+}
+
+
+.confidence {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+
+.info {
+    text-align: left;
+    margin-top: 30px;
+}
+
+
+.info p {
+    margin: 10px 0 25px;
+    color: #555;
+}
